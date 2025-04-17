@@ -1,0 +1,51 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    padding: 50px;
+}
+
+/* Simple box that will be animated */
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin-top: 20px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Animation for the box */
+@keyframes slideAndBounce {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate {
+    animation: slideAndBounce 2s ease-in-out;
+}
+
+/* Button styling */
+#animateButton {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#animateButton:hover {
+    background-color: #27ae60;
+}
